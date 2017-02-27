@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\build\CMakeFiles\5274d32a769d6689f37a1cfa49176df3\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7A81EE01-0E60-3607-B636-BD0B8D60A1BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
