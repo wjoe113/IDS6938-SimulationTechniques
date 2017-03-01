@@ -154,7 +154,7 @@ And the following code in the main() function:
 		<< "\t" << "----------" << std::endl;
 	outputFile << "| 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |" << std::endl;
 
-d.) Errors
+d.) The error percentages for RK1, RK2, and RK4:
 
 | x | %Err(E) | %Err(M) | %Err(RK4) |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -259,3 +259,18 @@ d.) Errors
 | 9.8 | -19.797 | -1.2648 | -0.00083063 |
 | 9.9 | -28.345 | -1.8276 | -0.0011901 |
 | 10.0 | -77.994 | -5.0776 | -0.0032655 |
+
+To produce the chart above, the following code was used in the toString() function:
+
+	std::ostringstream out;
+	out << "| " << std::setprecision(2) << x;
+	out << " | " << std::setprecision(5) << error(exact(x), y_euler);
+	out << " | " << std::setprecision(5) << error(exact(x), y_midpoint);
+	out << " | " << std::setprecision(5) << error(exact(x), y_RK4) << " |";
+	return   out.str();
+
+And the following code in the main() function:
+
+	outputFile << "x" << "\t" << "%Err(E)" << "\t\t" << "%Err(M)" << "\t\t" << "%Err(RK4)" << std::endl;
+	outputFile << "----" << "\t" << "----------" << "\t" << "----------" << "\t" << "----------" << std::endl;
+	outputFile << "| 0.0 | 0.0 | 0.0 | 0.0 |" << std::endl;
