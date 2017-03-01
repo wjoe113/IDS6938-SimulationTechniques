@@ -391,8 +391,11 @@ f.) Analyze your results:
 
 (1) From the Error Percentages chart and the code we used in this assignment, we can see that the accuracy was 
 greatest at RK4 and least at RK1.
+
 (2) As x increases, the less accurate Rk1, RK2, and RK4 become.
+
 (3) By varying the step size (h), the larger steps decrease the accuracy.
+
 (4) Therefore from part e of this assignment, the most accurate integration method is Rk4 with h = 0.5 
 (from the three choices 0.5, 1.0, 2.0) for x = < 0.0, 10.0 >. RK4 uses the forth integration from the exact function,
 making it easily the closest representation. Therefore, the higher the order of integration the higher the accuracy to
