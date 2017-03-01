@@ -386,3 +386,5 @@ And the following code in the main() function:
 		std::cout << toString(x, y_euler, y_midpoint, y_RK4, exact(x), 10) << std::endl;
 		outputFile << toString(x, y_euler, y_midpoint, y_RK4, exact(x), 10) << std::endl;
 	}
+
+f.) 
