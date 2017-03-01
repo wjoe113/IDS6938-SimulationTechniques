@@ -264,7 +264,7 @@ d.) The error percentages for RK1, RK2, and RK4:
 | 9.9 | -28.345 | -1.8276 | -0.0011901 |
 | 10.0 | -77.994 | -5.0776 | -0.0032655 |
 
-| Percent Errors  |
+| Error Percentages  |
 | ------------- |
 | ![](images/errorsChart.png?raw=true)  |
 
@@ -387,4 +387,11 @@ And the following code in the main() function:
 		outputFile << toString(x, y_euler, y_midpoint, y_RK4, exact(x), 10) << std::endl;
 	}
 
-f.) 
+f.) Analyze your resluts:
+
+(1) From the Error Percentages chart and the code we used in this assignment, we can see that the accuracy was 
+greatest at RK4 and least at RK1.
+(2) As x increases the less accurate Rk1, RK2, and RK4 become.
+(3) By varying the step size (h), the larger steps decreased the accuracy.
+(4) Therefore from part e of this assignment, the most accurate integration method is Rk4 with h = 0.5 
+(from the three choices 0.5, 1.0, 2.0) for x = < 0.0, 10.0 >.
