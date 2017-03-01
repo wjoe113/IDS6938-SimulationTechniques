@@ -350,6 +350,10 @@ h = 2.0 for x = < 0.0, 10.0 >
 | ------------- |
 | ![](images/h3Chart.png?raw=true)  |
 
+| h Error  |
+| ------------- |
+| ![](images/hErrorChart.png?raw=true)  |
+
 To produce the chart above, the following code was used in the toString() function:
 
 	std::ostringstream out;
