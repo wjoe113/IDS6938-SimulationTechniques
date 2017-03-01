@@ -136,6 +136,10 @@ c.) The numerical integrations for RK1, RK2, RK4, and exact, where h = 0.1 for x
 | 9.9 | 2674.851039 | 80.95594681 | -97.93441991 | -97.81800842 |
 | 10.0 | 2998.124017 | 158.7831645 | -39.0670402 | -38.93988091 |
 
+| Numerical Integration Solutions  |
+| ------------- |
+| ![](images/numericalIntegrationSolutionsChart.png?raw=true)  |
+
 To produce the chart above, the following code was used in the toString() function:
 
 	std::ostringstream out;
@@ -259,6 +263,10 @@ d.) The error percentages for RK1, RK2, and RK4:
 | 9.8 | -19.797 | -1.2648 | -0.00083063 |
 | 9.9 | -28.345 | -1.8276 | -0.0011901 |
 | 10.0 | -77.994 | -5.0776 | -0.0032655 |
+
+| Percent Errors  |
+| ------------- |
+| ![](images/errorsChart.png?raw=true)  |
 
 To produce the chart above, the following code was used in the toString() function:
 
