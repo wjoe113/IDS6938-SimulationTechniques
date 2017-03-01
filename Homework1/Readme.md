@@ -10,6 +10,12 @@ The assignment is due: Monday, February 27 at 11:59PM (EST)
 | ------------- | ------------- |
 | ![](images/undeformed3.png?raw=true)  | ![](images/deformed3.png?raw=true) |
 
+## Part 1 - Numerical Analysis of Integration Functions (25pts)
+
+a.) df = y - (1.0 / 2.0) * exp(x / 2.0) * sin(5.0 * x) + 5.0 * exp(x / 2.0) * cos(5.0 * x)
+    exact = exp(x / 2.0) * sin(5.0 * x)
+
+
 
 
 Something
