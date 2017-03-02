@@ -407,5 +407,5 @@ the exact function.
 
 | The Jello Cube  |
 | ------------- |
-| ![](images/OrdinaryJelloCube.mp4?raw=true)  |
+| [![IMAGE ALT TEXT](images/jelloCubeThumbnail.png?raw=true)](images/OrdinaryJelloCube.mp4)  |
 
