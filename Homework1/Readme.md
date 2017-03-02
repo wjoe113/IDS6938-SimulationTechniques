@@ -405,7 +405,7 @@ the exact function.
 
 ## Part 2 - The Jello Cube (60pts)
 
-| The Jello Cube  |
+| The Jello Cube Video |
 | ------------- |
 | [![IMAGE ALT TEXT](images/jelloCubeThumbnail.png?raw=true)](images/OrdinaryJelloCube.mp4)  |
 
