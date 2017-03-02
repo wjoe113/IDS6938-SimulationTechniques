@@ -1,8 +1,4 @@
-﻿  Building Custom Rule D:/Data/Documents/Github Repositories/Forked IDS6938/IDS6938-SimulationTechniques/Lecture6-Solution/CMakeLists.txt
-  CMake does not need to re-run because D:/Data/Documents/Github Repositories/Forked IDS6938/IDS6938-SimulationTechniques/Lecture6-Solution/build/CMakeFiles/generate.stamp is up-to-date.
-  main.cpp
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\main.cpp(78): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\main.cpp(79): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\main.cpp(80): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\main.cpp(81): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+﻿  main.cpp
+D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\main.cpp(110): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\main.cpp(111): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
   helloworld.vcxproj -> D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Lecture6-Solution\build\Debug\helloworld.exe

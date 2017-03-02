@@ -16,6 +16,7 @@
 JelloMesh theJello;
 Camera theCamera;
 World theWorld("../worlds/ground.xml");
+//World theWorld("../worlds/cylinders.xml");
 mmc::FpsTracker theFpsTracker;
 
 // UI Helpers
@@ -321,7 +322,7 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     glutInitWindowSize(MWIDTH, MHEIGHT);
     glutInitWindowPosition(10, 10);
-    glutCreateWindow("JelloSim by IDS6938 - UCF - Modeling & Simulation");
+    glutCreateWindow("JelloSim by Joe Wileman - IDS6938 - UCF - Modeling & Simulation");
     glutDisplayFunc(onDrawCb);
     glutKeyboardFunc(onKeyboardCb);
     glutSpecialFunc(onKeyboardSpecialCb);
