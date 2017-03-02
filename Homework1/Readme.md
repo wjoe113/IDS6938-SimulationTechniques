@@ -350,7 +350,9 @@ h = 2.0 for x = < 0.0, 10.0 >
 | ------------- |
 | ![](images/h3Chart.png?raw=true)  |
 
-| h Error  |
+Errors for all the steps(h = 0.5, 1.0, 2.0)
+
+| h Percent Errors  |
 | ------------- |
 | ![](images/hErrorChart.png?raw=true)  |
 
