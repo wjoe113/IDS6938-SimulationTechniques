@@ -4,7 +4,7 @@
 
 This is the framework for homework #1. Please first read the [homework writeup](HomeWork%231.pdf).
 
-The assignment is due: Monday, February 27 at 11:59PM (EST)
+The assignment is due: Wednesday, March 01 at 8:59PM (PST)
 
 | undeformed jello  | deformed jello |
 | ------------- | ------------- |
