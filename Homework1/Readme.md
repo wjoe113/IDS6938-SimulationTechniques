@@ -409,3 +409,25 @@ the exact function.
 | ------------- |
 | [![IMAGE ALT TEXT](images/jelloCubeThumbnail.png?raw=true)](images/OrdinaryJelloCube.mp4)  |
 
+## Part 3 - Written Questions (10pts)
+
+(1) The jello's Ks (stiffness) is what helps the cube retain its shape. The higher the stiffness the more rigid the cube.
+The jello's Kd (dampening force) determines how quickly the spring forces react on the springs. The higher the dampening
+forces the quicker the springs return to their original shape.
+
+(2) A benefit to our collision system is that we have our cubes colliding with solid objects (the floor, cylinders, etc). Our
+cubes do not have to worry about colliding with dynamic shapes such as other cubes. This makes it easy to test the springs
+to gravity, other springs in the cube, etc. Similarly, a drawback could be that we, those of us that didn't add additional
+cubes, cannot have an accurate simulation of the cube colliding with different objects.
+
+(3) Buildings (particularly tall buildings), bridges, and other giant structures could benefit from mass-spring simulations.
+The steel beams could be observed as the springs, as well as how they work with other beams in the structure to keep
+the structure upright, straight, and strong.
+
+(4) Yes and no. As stated in class, realistic physics can be very difficult to simulate. My jello cube appears to be behaving
+realistically (when working), but that is my opinion. Someone with a much better understanding of physics (such as our fearless leader)
+would have a keener eye to judge if my jello cube is behaving similarly to a realistic jello cube. According to my calculations in
+part 1 f.4 (because my jello cube isn't operating at max potential), I would use RK4 to get the jello cube stable as it is the most
+accurate integration method.
+
+(5) To simulate water I would use a tool developed by Blizzard Entertainment's Overwatch cinetatic team called volume fill. It allows you to take a geometric surface, turn it in to a volume, and control it to look like smoke, water, etc. It is less computationally expensive as other fluid dynamic particle systems, and can be applied to curves and geometry. I was lucky enough to attend the Overwatch cinematic panel at BlizzCon 2016 which goes in to more detail (https://www.youtube.com/watch?v=dyiHr06Einw#t=30m03s).
