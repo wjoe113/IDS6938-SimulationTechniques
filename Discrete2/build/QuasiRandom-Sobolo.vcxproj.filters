@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Discrete2\quasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Discrete2\sobol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Discrete2\sobol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Discrete2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BCC00987-11AF-362B-A20C-A8EC62EE34B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{94B11BB6-7998-352E-AB68-EFCAE8490387}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

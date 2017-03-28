@@ -18,11 +18,10 @@ int main()
 	std::random_device rd;
 
 	// 1) Change random number generators
-	std::mt19937_64 engine(rd());
-	//std::knuth_b engine(rd());
+	//std::mt19937_64 engine(rd());
+	std::knuth_b engine(rd());
 	//std::minstd_rand engine(rd());
 	//std::ranlux48 engine(rd());
-
 
 	// Another seed intialization routine (this is just here for future reference for you.)
 	// initialize the random number generator with time-dependent seed
@@ -31,31 +30,32 @@ int main()
 	//std::mt19937_64 e2;
 	//e2.seed(ss);
 
-	
-
 	//  2) - Change distribution types
-	std::uniform_real_distribution<> dist(0, 100);  // example of a uniform distribution
-	//std::normal_distribution<> dist(50,10);    // example of a normal distribution
-
+	//std::uniform_real_distribution<> dist(0, 100);  // example of a uniform distribution
+	//std::normal_distribution<> dist(50,10);		// example of a normal distribution
+	//std::geometric_distribution<int> dist(0.5);
+	//std::bernoulli_distribution dist(0.5);
+	std::poisson_distribution<> dist(50);
 
 	auto generator = std::bind(dist, engine);
 
 	// 3) Play with N
 	unsigned int N = 100000;  // number of values generated
+	//unsigned int N = 500;
 	double randomValue;
 	std::map<int, int> hist; //Counts of discrete values
 	std::vector<double> raw; //raw random values 
 
-
-	for (unsigned int i = 0; i < N; ++i) {
+	for (unsigned int i = 0; i < N; ++i)
+	{
 		randomValue = generator();
 		
 		++hist[std::round(randomValue)]; // count the values
 		raw.push_back(randomValue);  //push the raw values
 	}
 
-	for (auto p : hist) {
-		
+	for (auto p : hist)
+	{
 		// Uncomment if you want to see the values
 		//std::cout << std::fixed << std::setprecision(1) << std::setw(2)
 		//	<< p.first << " -  "<< p.second << std::endl;
@@ -65,23 +65,26 @@ int main()
 
 	}
 
-
 	// Print Results to File
 	std::ofstream myfile;
 	myfile.open("histogram_results.txt");
-	for (auto p : hist) {
+
+	for (auto p : hist)
+	{
 		myfile << std::fixed << std::setprecision(1) << std::setw(2)
 			<< p.first << "\t" << p.second  << std::endl;
 	}
-	myfile.close();
 
+	myfile.close();
 	myfile.open("raw_results.txt");
-	for (auto p : raw) {
+
+	for (auto p : raw)
+	{
 		myfile << std::fixed << std::setprecision(5) << std::setw(2)
 			<< p << std::endl;
 	}
-	myfile.close();
 
+	myfile.close();
 
 	//if you choose to write useful stats here
 	myfile.open("useful_stats.txt");
@@ -99,5 +102,4 @@ int main()
 	std::cout << "stdev: " << stdev << std::endl;
 	
 	myfile.close();
-
 }

@@ -22,9 +22,8 @@ int main(){
 	std::ofstream myfile;
 	myfile.open("markov_results.txt");
 
-	
-   // TODO add Markov vector - Matrix multiplication
-
+	// TODO add Markov vector - Matrix multiplication
+	v = v.transpose()*TransitionMatrix;
 
 	std::cout <<  v << std::endl;
 	//myfile << v << std::endl;  //this is just a sample, becareful how you print to file so you can mine useful stats

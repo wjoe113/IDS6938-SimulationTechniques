@@ -1,0 +1,23 @@
+﻿  test_markov.cpp
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(43): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\snakesandladders\TransitionMatrix.h(52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Markov.vcxproj -> D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework2\SnakesAndLadders\build\Debug\Markov.exe
