@@ -26,10 +26,11 @@ The goal of this assignment is to become familiar with the concepts in the secon
 ## Part 1: Empirical Tests of Randomness (20 pts).
 **(a) - 3pts:** Output the results of five different random number engines, using a uniform distribution for values between [0-100]. Generate useful charts and statistics from the output to analyze how uniform these values truly are. You are expected to look at some advanced statistics and test, for example: tests like the Kolmogorov-Smirnov test, Chi-square test, Autocorrelation test, and Spearman’s Rank Correlation Coefficient are a few examples of ones your could use.)
 
-Graphs incoming
-| MT  | Knuth |
+| N = 100000 |
 | ------------- | ------------- |
-| ![](images/mtHistogram.png?raw=true)  | ![](images/knuthHistogram.png?raw=true) |
+| ![](images/part1a/MT100000.png?raw=true)  | ![](images/part1a/Knuth100000.png?raw=true) |
+| ![](images/part1a/MS100000.png?raw=true)  | ![](images/part1a/Ranlux100000.png?raw=true) |
+| ![](images/part1a/Sobol100000.png?raw=true)  | ![](images/part1a/p1usefulstats.png?raw=true)  |
 
 **(b) - 2pts:**  Vary *N* (amount of samples). How do things change.
 
