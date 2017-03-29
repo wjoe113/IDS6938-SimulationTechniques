@@ -2242,7 +2242,7 @@
 				<PolygonArea>
 					<Id>1490735633725</Id>
 					<Name><![CDATA[waitingArea]]></Name>
-					<X>180</X><Y>700</Y>
+					<X>190</X><Y>700</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2260,7 +2260,7 @@
 					<Slope>
 						<Id>1490735633723</Id>
 						<Name><![CDATA[waitingArea]]></Name>
-						<X>0</X><Y>10</Y>
+						<X>-10</X><Y>10</Y>
 						<PublicFlag>false</PublicFlag>
 						<PresentationFlag>true</PresentationFlag>
 						<ShowLabel>true</ShowLabel>
@@ -2274,11 +2274,11 @@
 
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>70</Y></Point>
-						<Point><X>20</X><Y>70</Y></Point>
-						<Point><X>20</X><Y>30</Y></Point>
-						<Point><X>70</X><Y>30</Y></Point>
-						<Point><X>70</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>60</Y></Point>
+						<Point><X>40</X><Y>60</Y></Point>
+						<Point><X>60</X><Y>60</Y></Point>
+						<Point><X>60</X><Y>30</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
 					</Points>
 				</PolygonArea>
 				<ServicePoint>
@@ -2769,7 +2769,7 @@
 				<RectangleArea>
 					<Id>1490735681777</Id>
 					<Name><![CDATA[area4]]></Name>
-					<X>510</X><Y>700</Y>
+					<X>510</X><Y>710</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2799,15 +2799,15 @@
 						<SlopeType>angle</SlopeType>	
 					</Slope>
 
-					<Width>70</Width>
-					<Height>60</Height>
+					<Width>40</Width>
+					<Height>40</Height>
 					<Rotation>0.0</Rotation>
 				</RectangleArea>
 				<ServiceWithLine>
 					<ServiceColor>-16744448</ServiceColor>
 					<Id>1490735717825</Id>
 					<Name><![CDATA[services4]]></Name>
-					<X>630.514</X><Y>730</Y>
+					<X>582.659</X><Y>730</Y>
 					<Label><X>91.799</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2860,7 +2860,7 @@
 				<QueueLine>
 					<Id>1490735717827</Id>
 					<Name><![CDATA[queueLine6]]></Name>
-					<X>607.855</X><Y>730</Y>
+					<X>560</X><Y>730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2884,7 +2884,7 @@
 				<ServicePoint>
 					<Id>1490735717831</Id>
 					<Name><![CDATA[servicePoint9]]></Name>
-					<X>789.125</X><Y>730</Y>
+					<X>741.27</X><Y>730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2919,13 +2919,13 @@
 				<Figure3D>
 					<Id>1490742054906</Id>
 					<Name><![CDATA[airliner]]></Name>
-					<X>810</X><Y>790</Y>
+					<X>780</X><Y>820</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>810</X><Y>790</Y><Z>0</Z>
+					<X>780</X><Y>820</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<FileName><![CDATA[x3d/airliner.x3d]]></FileName>
 					<ColorTable>
@@ -2935,7 +2935,7 @@
 						</ColorMapping>
 					</ColorTable>
 					<AutoScale>true</AutoScale>
-					<Scale>0.5</Scale>
+					<Scale>0.75</Scale>
 					<Rotation>270.0</Rotation>
 					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
@@ -3727,13 +3727,13 @@
 				<Figure3D>
 					<Id>1490753344826</Id>
 					<Name><![CDATA[table_2]]></Name>
-					<X>260</X><Y>680</Y>
+					<X>260</X><Y>690</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>260</X><Y>680</Y><Z>0</Z>
+					<X>260</X><Y>690</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<FileName><![CDATA[x3d/table_2.x3d]]></FileName>
 					<ColorTable>
@@ -3755,13 +3755,13 @@
 				<Figure3D>
 					<Id>1490753388371</Id>
 					<Name><![CDATA[policeman6]]></Name>
-					<X>270</X><Y>680</Y>
+					<X>270</X><Y>690</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>270</X><Y>680</Y><Z>0</Z>
+					<X>270</X><Y>690</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<FileName><![CDATA[x3d/policeman.x3d]]></FileName>
 					<ColorTable>
@@ -3807,13 +3807,13 @@
 				<Figure3D>
 					<Id>1490753398740</Id>
 					<Name><![CDATA[phone]]></Name>
-					<X>260</X><Y>670</Y>
+					<X>260</X><Y>680</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>260</X><Y>670</Y><Z>10</Z>
+					<X>260</X><Y>680</Y><Z>10</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<FileName><![CDATA[x3d/phone.x3d]]></FileName>
 					<ColorTable>
@@ -3843,13 +3843,13 @@
 				<Figure3D>
 					<Id>1490753418989</Id>
 					<Name><![CDATA[laptop_open_off]]></Name>
-					<X>260</X><Y>680</Y>
+					<X>260</X><Y>690</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>260</X><Y>680</Y><Z>10</Z>
+					<X>260</X><Y>690</Y><Z>10</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<FileName><![CDATA[x3d/laptop_open_off.x3d]]></FileName>
 					<ColorTable>
@@ -3875,13 +3875,13 @@
 				<Figure3D>
 					<Id>1490753585768</Id>
 					<Name><![CDATA[chair]]></Name>
-					<X>280</X><Y>680</Y>
+					<X>270</X><Y>680</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>280</X><Y>680</Y><Z>0</Z>
+					<X>270</X><Y>680</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<FileName><![CDATA[x3d/chair.x3d]]></FileName>
 					<ColorTable>
