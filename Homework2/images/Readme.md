@@ -43,7 +43,7 @@ We all love board games. A board game can be viewed mathematically as a Markov c
 
 | Moksha Patam  | Snakes and Ladders |
 | ------------- | ------------- |
-| ![](images/snake1.jpg?raw=true)  | ![](images/snake2.jpg?raw=true) |
+| ![](snake1.jpg?raw=true)  | ![](snake2.jpg?raw=true) |
 
 ##### Background
 The classic game has 100 positions on the board. You toss one die, and move squares based on the result of the die. If you land on a ladder you move up the ladder to a higher numbered square. If you land on a snake's mouth, you descend to a lower numbered square. For purposes of simulation, we will add one extra square 0 (starting position). So there are 101 positions on the board.
