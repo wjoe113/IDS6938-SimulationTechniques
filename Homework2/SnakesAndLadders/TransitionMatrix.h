@@ -10,8 +10,6 @@ void SetTransitionMatrix()
 {
 	TransitionMatrix.setZero();
 	//TransitionMatrix(0, 1) = prob;
-	// rows = 
-	// columns = 
 
 	for (int i = 0; i < TransitionMatrix.rows(); i++)
 	{
