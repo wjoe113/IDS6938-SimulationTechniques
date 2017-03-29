@@ -30,7 +30,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | ------------- | ------------- |
 | ![](images/part1a/MT100000.png?raw=true) | ![](images/part1a/Knuth100000.png?raw=true) |
 | ![](images/part1a/MS100000.png?raw=true) | ![](images/part1a/Ranlux100000.png?raw=true) |
-| ![](images/part1a/Sobol100000.png?raw=true) | ![](images/part1a/p1usefulstats.png?raw=true) |
+| ![](images/part1a/Sobol100000.png?raw=true) | ![](images/part1a/pausefulstats.png?raw=true) |
 
 **(b) - 2pts:**  Vary *N* (amount of samples). How do things change.
 
