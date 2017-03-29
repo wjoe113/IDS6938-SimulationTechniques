@@ -42,6 +42,12 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 **(c) - 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
 
+| N = 100000 | Engine: Knuth |
+| ------------- | ------------- |
+| ![](images/part1c/UniformReal100000.png?raw=true) | ![](images/part1c/Normal100000.png?raw=true) |
+| ![](images/part1c/Geometric100000.png?raw=true) | ![](images/part1c/Bernoulli100000.png?raw=true) |
+| ![](images/part1c/Poisson100000.png?raw=true) | ![](images/part1c/pcusefulstats.png?raw=true) |
+
 **(d)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.
 
 **(e)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different distributions. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines. (See [Random Numbers Webcourse page](https://webcourses.ucf.edu/courses/1246518/pages/random-numbers?module_item_id=10541423) for a rough idea what you should produce.)
