@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\queues\mm1_queue.h(154): warning C4129: '%': unrecognized character escape sequence
+d:\data\documents\github repositories\forked ids6938\ids6938-simulationtechniques\homework2\queues\mm1_queue.h(101): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  MM1.vcxproj -> D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework2\queues\build\Debug\MM1.exe
