@@ -132,6 +132,7 @@ As seen above, because of the snakes and ladders, there is no definite possibilt
 
 ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter).
 
+See the markov_results.txt, markov_results_wins.txt, dtmc_results.txt, and excel sheet (image folder) for more information.
 
 ## Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
 
