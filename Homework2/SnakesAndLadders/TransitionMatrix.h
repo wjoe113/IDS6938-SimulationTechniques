@@ -2,7 +2,7 @@ int size = 101;  //TODO - 101
 Eigen::MatrixXf TransitionMatrix(size, size);
 Eigen::VectorXf v(size);
 
-unsigned int ROLLS = 100; //TODO - "They see me rolling!"
+unsigned int ROLLS = 1000; //TODO - "They see me rolling!"
 
 double prob = (1.0/6.0);  //TODO - 1/6
 

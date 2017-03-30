@@ -13,7 +13,7 @@
 int main(){
 
 	SetTransitionMatrix();
-	//ModifyTransformationMatrix();
+	ModifyTransformationMatrix();
 
 	//Output Vector
 	v.setZero();
@@ -22,6 +22,8 @@ int main(){
 	// Print Results to File
 	std::ofstream myfile;
 	myfile.open("markov_results.txt");
+	std::ofstream myfile2;
+	myfile2.open("markov_results_wins.txt");
 
 	for (int j = 0; j < ROLLS; j++)
 	{
@@ -32,6 +34,9 @@ int main(){
 		{
 			std::cout << v(i) << ", ";
 			myfile << v(i) << ", ";
+			if (i == size - 1) {
+				myfile2 << v(i) << std::endl;
+			}
 		}
 		std::cout << std::endl;
 		myfile << std::endl;
@@ -39,7 +44,7 @@ int main(){
 
 	myfile << v << std::endl;  //this is just a sample, becareful how you print to file so you can mine useful stats
 	myfile.close();
+	myfile2.close();
 
-
-  return 1;
+	return 1;
 }

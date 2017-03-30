@@ -16,7 +16,7 @@
 int main() {
 
 	SetTransitionMatrix();
-	//ModifyTransformationMatrix();
+	ModifyTransformationMatrix();
 
 	// Print Results to File
 	std::ofstream myfile;
@@ -31,7 +31,7 @@ int main() {
 	for (unsigned int i = 0; i < N; ++i) {
 		
 		//TODO (add DTMC, and histogram lines.)
-		discreteMC = DTMC(TransitionMatrix, 32, start);
+		discreteMC = DTMC(TransitionMatrix, 10, start);
 		++hist[std::round(discreteMC.back())];
 
 		//Code if you wanted to print out results at each step
