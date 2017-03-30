@@ -25,13 +25,13 @@ int main() {
 	int start = 0;
 
 	//simulate discrete time Markov Chain
-	unsigned int N = 100;
+	unsigned int N = 10;
 	std::map<int, int> hist;
 	std::vector<int> discreteMC;
 	for (unsigned int i = 0; i < N; ++i) {
 		
 		//TODO (add DTMC, and histogram lines.)
-		discreteMC = DTMC(TransitionMatrix, 10, start);
+		discreteMC = DTMC(TransitionMatrix, 32, start);
 		++hist[std::round(discreteMC.back())];
 
 		//Code if you wanted to print out results at each step
