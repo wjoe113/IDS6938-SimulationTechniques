@@ -138,7 +138,15 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 
 **(a) - 4pts:** To start create the senario in the figure above in *main.cpp*. Checkin will have a *mu* of 53 and accept new arrivals, the security gates will have a *mu* of 20, and will not accept new arrivials, boarding will have a *mu* of 80. You will have to set up  the appropriate *MM1_Queue* objects to capture the functionality above.
 
+| main.cpp |
+| ------------- |
+| ![](images/part3/p3acode.png?raw=true) |
+
 **(b) - 4pts:** You want to add a check that your process is within an error range *is_within_error_range(float)* where the error range will be 0.002. You also want to process the next event, and add an external arrival where marked.
+
+| main.cpp is_within_error_range() |
+| ------------- |
+| ![](images/part3/p3bcode.png?raw=true) |
 
 **(c) - 3pts:** in *mm1_queue.cpp* : add code to caculate the expected results for: 
   *  expected_server_utilization 
@@ -148,9 +156,31 @@ Run the same simulation and analyze your results similar to part (b) for the pro
   * expected waiting time
   * expected response time 
 
+| mm1_queue.cpp |
+| ------------- |
+| ![](images/part3/p3ccode.png?raw=true) |
+
 **(d) - 4pts:** Write code to call the functions to output and generate data from the airport senario. Plot and analyze the useful statistics/results in the program of your choice.  (Hint -  basically call  *.output();* on the MM1_Queue objects you create. Hint2 - two other use functions are *get_current_time()* and  *plot_results_output()* call intially on your intial MM1_Queue object.)  
 
+| Airport Useful Stats Graphs (full chart in image folder) |
+| ------------- |
+| ![](images/part3/p3dcharts.png?raw=true) |
+
 **(e) - 15pts:** Download the personal edition of **[Anylogic](http://www.anylogic.com/)**, read through the [documentation](http://www.anylogic.com/learn-simulation) as needed, and set up the same type of simulation discussed above.
+
+| AnyLogic Airport Simulation |
+| ------------- |
+| ![](images/part3/p3eanylogicchart.png?raw=true) |
+
+| AnyLogic Airport 2D |
+| ------------- |
+| ![](images/part3/p3eanylogic2D.png?raw=true) |
+
+| AnyLogic Airport 3D |
+| ------------- |
+| ![](images/part3/p3eanylogic3D1.png?raw=true) |
+| ![](images/part3/p3eanylogic3D2.png?raw=true) |
+
 
 ## Part 4 - Implementing Extra Features (10 pts)
 Implementing 2 features on the extra features list. Pick any feature on the "*extra features*" list below to customize your assignment to fit your interests. Please document this in your writeup. (*Note: These should total 10pts. You could successfully implement a feature worth 10pts or greater. This also fulfills this requirement. The features are assigned points based on difficulty. The 5pt features are more straightforward.*)
