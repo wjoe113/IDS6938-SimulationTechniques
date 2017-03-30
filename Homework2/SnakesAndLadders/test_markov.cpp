@@ -13,6 +13,7 @@
 int main(){
 
 	SetTransitionMatrix();
+	//ModifyTransformationMatrix();
 
 	//Output Vector
 	v.setZero();
@@ -22,12 +23,21 @@ int main(){
 	std::ofstream myfile;
 	myfile.open("markov_results.txt");
 
-	// TODO add Markov vector - Matrix multiplication
-	v = v.transpose()*TransitionMatrix;
+	for (int j = 0; j < ROLLS; j++)
+	{
+		// TODO add Markov vector - Matrix multiplication
+		v = v.transpose() * TransitionMatrix;
 
-	std::cout <<  v << std::endl;
-	//myfile << v << std::endl;  //this is just a sample, becareful how you print to file so you can mine useful stats
-	
+		for (int i = 0; i < size; i++)
+		{
+			std::cout << v(i) << ", ";
+			myfile << v(i) << ", ";
+		}
+		std::cout << std::endl;
+		myfile << std::endl;
+	}
+
+	myfile << v << std::endl;  //this is just a sample, becareful how you print to file so you can mine useful stats
 	myfile.close();
 
 

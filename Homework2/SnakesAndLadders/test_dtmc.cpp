@@ -10,45 +10,48 @@
 #include "markov.h"
 #include "TransitionMatrix.h"
 
-
 // Hint: Set N - number of simulations low until you have it working
 //       Then set it much much higher, and run in release mode so its faster
 
 int main() {
 
 	SetTransitionMatrix();
+	//ModifyTransformationMatrix();
 
 	// Print Results to File
 	std::ofstream myfile;
-	myfile.open("markov_results.txt");
+	myfile.open("dtmc_results.txt");
 
 	int start = 0;
 
 	//simulate discrete time Markov Chain
-	unsigned int N = 50;
+	unsigned int N = 100;
 	std::map<int, int> hist;
 	std::vector<int> discreteMC;
 	for (unsigned int i = 0; i < N; ++i) {
 		
 		//TODO (add DTMC, and histogram lines.)
-		// DTMC(); //FROM DISCRETE3
-		discreteMC = DTMC(TransitionMatrix, 9, 0);
+		discreteMC = DTMC(TransitionMatrix, 10, start);
+		++hist[std::round(discreteMC.back())];
 
 		//Code if you wanted to print out results at each step
 		for (auto elem : discreteMC)
-			std::cout << elem << std::endl;
+		{
+			std::cout << elem << ", ";
+			myfile << elem << ", ";
+		}
+		std::cout << std::endl;
+		myfile << std::endl;
 	}
 	//Returns an array discreteMC with the states at each step of the discrete-time Markov Chain
 	//The number of transitions is given by steps. The initial state is given by start 
 	//(the states are indexed from 0 to n-1 where n is the number of arrays in transMatrix).
 	//hist is the histogram 
 
-
-	// (double)p.second / N    - (decimal) percentage.
+	//(double)p.second / N - (decimal)percentage.
 	for (auto p : hist) {
 		std::cout << p.first << "\t" << (double)p.second / N << std::endl;
 	}
-
 	myfile.close();
 
 	return 1;
