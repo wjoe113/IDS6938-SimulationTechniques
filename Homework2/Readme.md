@@ -144,7 +144,7 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 
 **(b) - 4pts:** You want to add a check that your process is within an error range *is_within_error_range(float)* where the error range will be 0.002. You also want to process the next event, and add an external arrival where marked.
 
-| main.cpp is_within_error_range() |
+| main.cpp is_within_error_range(0.002) |
 | ------------- |
 | ![](images/part3/p3bcode.png?raw=true) |
 
@@ -165,6 +165,8 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 | Airport Useful Stats Graphs (full chart in image folder) |
 | ------------- |
 | ![](images/part3/p3dcharts.png?raw=true) |
+
+* ANSWER: From the graphs above we can see how the simulation performed each task compared to the expected performance of that task. For example, the number of customers was higher than expected a majority of the time, and the wait time was around average (for once). 
 
 **(e) - 15pts:** Download the personal edition of **[Anylogic](http://www.anylogic.com/)**, read through the [documentation](http://www.anylogic.com/learn-simulation) as needed, and set up the same type of simulation discussed above.
 
