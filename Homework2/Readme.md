@@ -59,7 +59,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 <BR>![](images/null.png?raw=true)<BR>
 From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
 
-Everything works!
+ANSWER: Everything works!
 
 | Null State Game |
 | ------------- |
@@ -68,7 +68,27 @@ Everything works!
 **(b) Simulate and analyze the results of Null State Game - 10pts:** What is the modal number of moves required by a single player to finish the game? We will be simulating the game two different ways. **(1) Markov Chain**: The game can be analyzed with a row vector, *v* with 101 components, representing the probabilities that the player is on each of the positions. V(0) is (1,0,0,...,0) since we know we start at square 0. v evolves by: <BR>![](images/prob.png?raw=true)<BR>
 For this part (1) use the *Markov project* in the Snake and Ladders starter code.<BR>
 
+ANSWER: The modal number of moves required by a single player to finish the game is 42. Just kidding, but no not really... Using the Markov Chain we can expect to see our first likelihood of winning at 18 rolls. However, by likelihood I mean you'd have a 1.01024e-11 likelihood of winning. But no worries, by roll 44 you'd be guaranteed to win. See material in subpart 2.
+
 **(2) Monte Carlo**: he will will use a monte carlo process to solve our Discrete Time Markov Chains. Here (2) use the DTMC project, and utilize the DTMC method similar to what we did in class. <BR><BR>Produce graphs to analyze the results and show how the game evolves over time for both methods. Plot useful statistics of the results such as percentage chance of finishing the game in n-moves, cumulative probability of finishing the game in n-moves, and other ways to convey useful information of the results.
+
+ANSWER: Using the DTMC method we can expect to see our first win around 25 rolls and win in ever game after aroudn 32 rolls. According to this nicely made graph and pictures, we can see our results:
+
+| Useful States (full chart in images folder) |
+| ------------- |
+| ![](images/part2b/p2busefulstats.png?raw=true) |
+
+| Markov Chart |
+| ------------- |
+| ![](images/part2b/MarkovNullState.png?raw=true) |
+
+| DTMC First Win |
+| ------------- |
+| ![](images/part2b/p2b2dtmc1w.png?raw=true) |
+
+| DTMC All Win |
+| ------------- |
+| ![](images/part2b/p2b2dtmcAw.png?raw=true) |
 
 **(c) Simulate and analyze the results of Snakes and Ladders -10pts:**  Construct a new transition matrix based on the table:
 
