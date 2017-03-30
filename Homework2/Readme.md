@@ -42,7 +42,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | ------------- | ------------- |
 | ![](images/part1b/MT500.png?raw=true) | ![](images/part1b/Knuth500.png?raw=true) |
 | ![](images/part1b/MS500.png?raw=true) | ![](images/part1b/Ranlux500.png?raw=true) |
-| ![](images/part1b/Sobol500.png?raw=true) | | ![](images/part1b/p1busefulstats.png?raw=true) |
+| ![](images/part1b/Sobol500.png?raw=true) | ![](images/part1b/p1busefulstats.png?raw=true) |
 
 **(c) - 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
 
