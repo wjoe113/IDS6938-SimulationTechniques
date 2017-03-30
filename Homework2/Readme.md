@@ -5,7 +5,7 @@
 [University of Central Florida](http://www.ist.ucf.edu/grad/)
 This is the framework for homework #2. 
 
-I would like to use 2 late day.
+I would like to use 2 late days.
 Extra Credit:
 * (10 Points)-Add a 2D visualization to AnyLogic for Part 3.
 * (10 Points)-Add a 3D visualization to AnyLogic for Part 3.
