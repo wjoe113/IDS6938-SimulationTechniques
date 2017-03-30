@@ -71,7 +71,15 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 * ANSWER: Using the DTMC method we can expect to see our first win around 25 rolls and win in ever game after around 32 rolls. The DTMC null state graph below shows where each game ended after 25 rolls. You can see one game made it to the finish. Similarly, you can see the results of part b1 below in the Markov graph.
 
-| Useful States (full chart in images folder) |
+| DTMC First Win After 25 Rolls |
+| ------------- |
+| ![](images/part2b/p2b2dtmc1w.png?raw=true) |
+
+| DTMC All Wins After 32 Rolls |
+| ------------- |
+| ![](images/part2b/p2b2dtmcAw.png?raw=true) |
+
+| Useful Stats (full excel chart in images folder) |
 | ------------- |
 | ![](images/part2b/p2busefulstats.png?raw=true) |
 
@@ -82,14 +90,6 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | DTMC Null State Graph |
 | ------------- |
 | ![](images/part2b/DTMCNullState.png?raw=true) |
-
-| DTMC First Win After 25 Rolls |
-| ------------- |
-| ![](images/part2b/p2b2dtmc1w.png?raw=true) |
-
-| DTMC All Wins After 32 Rolls |
-| ------------- |
-| ![](images/part2b/p2b2dtmcAw.png?raw=true) |
 
 
 **(c) Simulate and analyze the results of Snakes and Ladders -10pts:**  Construct a new transition matrix based on the table:
@@ -128,7 +128,7 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 
 **(d) Think - 10pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
 
-* ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter). See the markov_results.txt, markov_results_wins.txt, dtmc_results.txt, and excel sheet (image folder) for more information.
+* ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining exercise of chance (and very long homework assignments - I'm not bitter). See the markov_results.txt, markov_results_wins.txt, dtmc_results.txt, and excel sheets (image folder) for more information.
 
 ## Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
 
