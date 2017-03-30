@@ -60,6 +60,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
 
 Everything works!
+
 | Null State Game |
 | ------------- |
 | ![](images/part2b/p2aproof.png?raw=true) |
