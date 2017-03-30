@@ -90,6 +90,7 @@ ANSWER: Using the DTMC method we can expect to see our first win around 25 rolls
 | ------------- |
 | ![](images/part2b/p2b2dtmcAw.png?raw=true) |
 
+
 **(c) Simulate and analyze the results of Snakes and Ladders -10pts:**  Construct a new transition matrix based on the table:
 
 Ladders From  | Ladders To | |  Snakes From  | Snakes To 
@@ -106,7 +107,12 @@ Ladders From  | Ladders To | |  Snakes From  | Snakes To
 
 Run the same simulation and analyze your results similar to part (b) for the proper game of *Snakes and Ladders* for both methods. How often are the snakes and ladders used, how do the probability of finishing change, etc? What is the maximum and expected amount of moves for the game? Use charts and graphs to illustrate these points.
 
-**(d) Think - 0pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
+ANSWER: Everything Works!
+
+**(d) Think - 10pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
+
+ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter).
+
 
 ## Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
 
