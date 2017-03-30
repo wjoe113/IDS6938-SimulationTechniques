@@ -5,7 +5,7 @@
 [University of Central Florida](http://www.ist.ucf.edu/grad/)
 This is the framework for homework #2. 
 
-I would like to use 1 late day.
+I would like to use 2 late day.
 
 The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
@@ -65,7 +65,9 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 **(b) Simulate and analyze the results of Null State Game - 10pts:** What is the modal number of moves required by a single player to finish the game? We will be simulating the game two different ways. **(1) Markov Chain**: The game can be analyzed with a row vector, *v* with 101 components, representing the probabilities that the player is on each of the positions. V(0) is (1,0,0,...,0) since we know we start at square 0. v evolves by: For this part (1) use the *Markov project* in the Snake and Ladders starter code.<BR>
 
-* ANSWER: The modal number of moves required by a single player to finish the game is 42. Just kidding, but no not really... Using the Markov Chain we can expect to see our first likelihood of winning at 18 rolls. However, by likelihood I mean you'd have a 1.01024e-11 likelihood of winning. But no worries, by roll 44 you'd be guaranteed a win. See graphs and output in part b2. (2) Monte Carlo: he will will use a monte carlo process to solve our Discrete Time Markov Chains. Here (2) use the DTMC project, and utilize the DTMC method similar to what we did in class. <BR><BR>Produce graphs to analyze the results and show how the game evolves over time for both methods. Plot useful statistics of the results such as percentage chance of finishing the game in n-moves, cumulative probability of finishing the game in n-moves, and other ways to convey useful information of the results.
+* ANSWER: The modal number of moves required by a single player to finish the game is 42. Just kidding, but no not really... Using the Markov Chain we can expect to see our first likelihood of winning at 18 rolls. However, by likelihood I mean you'd have a 1.01024e-11 likelihood of winning. But no worries, by roll 44 you'd be guaranteed a win. See graphs and output in part b2.
+
+**(2) Monte Carlo:** he will will use a monte carlo process to solve our Discrete Time Markov Chains. Here (2) use the DTMC project, and utilize the DTMC method similar to what we did in class. <BR><BR>Produce graphs to analyze the results and show how the game evolves over time for both methods. Plot useful statistics of the results such as percentage chance of finishing the game in n-moves, cumulative probability of finishing the game in n-moves, and other ways to convey useful information of the results.
 
 * ANSWER: Using the DTMC method we can expect to see our first win around 25 rolls and win in ever game after around 32 rolls. The DTMC null state graph below shows where each game ended after 25 rolls. You can see one game made it to the finish. Similarly, you can see the results of part b1 below in the Markov graph.
 
@@ -126,9 +128,7 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 
 **(d) Think - 10pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
 
-*ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter).
-
-See the markov_results.txt, markov_results_wins.txt, dtmc_results.txt, and excel sheet (image folder) for more information.
+* ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter). See the markov_results.txt, markov_results_wins.txt, dtmc_results.txt, and excel sheet (image folder) for more information.
 
 ## Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
 
