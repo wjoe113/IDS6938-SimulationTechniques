@@ -117,16 +117,17 @@ int main(int argc, char* argv[])
 		   }
 	   }
 
-		//TODO Output statistics airport senario.
-   
-		idCheck.output(); cout << "*********" << endl;
-		security1.output(); cout << "*********" << endl;
-		security2.output(); cout << "*********" << endl;
-		security3.output(); cout << "*********" << endl;
-		boardPlane.output(); cout << "*********" << endl;
+	   //Hint2
+	   idCheck.get_current_time();
+	   idCheck.plot_results_output();
 
+		//TODO Output statistics airport senario.
+		idCheck.output(); cout << endl << endl;
+		security1.output(); cout << endl << endl;
+		security2.output(); cout << endl << endl;
+		security3.output(); cout << endl << endl;
+		boardPlane.output(); cout << endl << endl;
 		//**************************************************************************
-   
    }
 
    return(0);
