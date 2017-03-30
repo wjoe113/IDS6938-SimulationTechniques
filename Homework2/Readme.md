@@ -54,9 +54,23 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 **(d)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.
 
+| Unit Square - Engines, N = 500, 1000, 2000 |
+| ------------- |
+| ![](images/part1de/p1dplots.png?raw=true) |
+
 **(e)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different distributions. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines. (See [Random Numbers Webcourse page](https://webcourses.ucf.edu/courses/1246518/pages/random-numbers?module_item_id=10541423) for a rough idea what you should produce.)
 
 **(f)- 4pts:** Repeat parts (d) and (e) with a unit circle.
+
+| Unit Circle - Engines, N = 1000 |
+| ------------- |
+| ![](images/part1de/p1fcircle1000.png?raw=true) |
+
+| Unit Circles - Distributions, N = 1000 |
+| ------------- |
+| ![](images/part1de/p1fcircle1000.png?raw=true) |
+
+* ANSWER: If you run each engine twice (for sin and cos unit calculations), run each distribution with one random engine twice, then calculate their new x and y for the circle, all tripled to account for varying N's, you'd run: 20 simulations, have 60 lines of data, and 30 unit circles and squares. Not including previous parts (although this builds on them). I had already made all 15 unit squares, but for the sake of time I did one unit circle for each engine and sistribution with N = 1000. Are you sure this part isn't worth 40pts? No matter, full excel sheets with all 20+ simulations, 60+ lines of data, and 30+ unit circles and squares are in the image folders.
 
 ## Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
 **(a) Null State Game transition matrix - 10pts:** The *null state game* is defined by a game with no snakes and no ladders. This simplifies the game to just the moves of the two dice rolls. Create the transition matrix for the null state game. The Transition Matrix would be decided by the roll of a fair, six-sided die, so it would start to look like: From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
