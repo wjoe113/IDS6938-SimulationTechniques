@@ -30,7 +30,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | ------------- | ------------- |
 | ![](images/part1a/MT100000.png?raw=true) | ![](images/part1a/Knuth100000.png?raw=true) |
 | ![](images/part1a/MS100000.png?raw=true) | ![](images/part1a/Ranlux100000.png?raw=true) |
-| ![](images/part1a/Sobol100000.png?raw=true) | ![](images/part1a/pausefulstats.png?raw=true) |
+| ![](images/part1a/Sobol100000.png?raw=true) | ![](images/part1a/p1ausefulstats.png?raw=true) |
 
 **(b) - 2pts:**  Vary *N* (amount of samples). How do things change.
 
@@ -46,7 +46,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | ------------- | ------------- |
 | ![](images/part1c/UniformReal100000.png?raw=true) | ![](images/part1c/Normal100000.png?raw=true) |
 | ![](images/part1c/Geometric100000.png?raw=true) | ![](images/part1c/Bernoulli100000.png?raw=true) |
-| ![](images/part1c/Poisson100000.png?raw=true) | ![](images/part1c/pcusefulstats.png?raw=true) |
+| ![](images/part1c/Poisson100000.png?raw=true) | ![](images/part1c/p1cusefulstats.png?raw=true) |
 
 **(d)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.
 
@@ -57,20 +57,17 @@ The goal of this assignment is to become familiar with the concepts in the secon
 ## Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
 **(a) Null State Game transition matrix - 10pts:** The *null state game* is defined by a game with no snakes and no ladders. This simplifies the game to just the moves of the two dice rolls. Create the transition matrix for the null state game. The Transition Matrix would be decided by the roll of a fair, six-sided die, so it would start to look like: From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
 
-ANSWER: Everything works!
+* ANSWER: Everything works!
 
 | Null State Game |
 | ------------- |
 | ![](images/part2b/p2aproof.png?raw=true) |
 
-**(b) Simulate and analyze the results of Null State Game - 10pts:** What is the modal number of moves required by a single player to finish the game? We will be simulating the game two different ways. **(1) Markov Chain**: The game can be analyzed with a row vector, *v* with 101 components, representing the probabilities that the player is on each of the positions. V(0) is (1,0,0,...,0) since we know we start at square 0. v evolves by: <BR>![](images/prob.png?raw=true)<BR>
-For this part (1) use the *Markov project* in the Snake and Ladders starter code.<BR>
+**(b) Simulate and analyze the results of Null State Game - 10pts:** What is the modal number of moves required by a single player to finish the game? We will be simulating the game two different ways. **(1) Markov Chain**: The game can be analyzed with a row vector, *v* with 101 components, representing the probabilities that the player is on each of the positions. V(0) is (1,0,0,...,0) since we know we start at square 0. v evolves by: For this part (1) use the *Markov project* in the Snake and Ladders starter code.<BR>
 
-ANSWER: The modal number of moves required by a single player to finish the game is 42. Just kidding, but no not really... Using the Markov Chain we can expect to see our first likelihood of winning at 18 rolls. However, by likelihood I mean you'd have a 1.01024e-11 likelihood of winning. But no worries, by roll 44 you'd be guaranteed a win. See graphs and output in part b2.
+* ANSWER: The modal number of moves required by a single player to finish the game is 42. Just kidding, but no not really... Using the Markov Chain we can expect to see our first likelihood of winning at 18 rolls. However, by likelihood I mean you'd have a 1.01024e-11 likelihood of winning. But no worries, by roll 44 you'd be guaranteed a win. See graphs and output in part b2. (2) Monte Carlo: he will will use a monte carlo process to solve our Discrete Time Markov Chains. Here (2) use the DTMC project, and utilize the DTMC method similar to what we did in class. <BR><BR>Produce graphs to analyze the results and show how the game evolves over time for both methods. Plot useful statistics of the results such as percentage chance of finishing the game in n-moves, cumulative probability of finishing the game in n-moves, and other ways to convey useful information of the results.
 
-**(2) Monte Carlo**: he will will use a monte carlo process to solve our Discrete Time Markov Chains. Here (2) use the DTMC project, and utilize the DTMC method similar to what we did in class. <BR><BR>Produce graphs to analyze the results and show how the game evolves over time for both methods. Plot useful statistics of the results such as percentage chance of finishing the game in n-moves, cumulative probability of finishing the game in n-moves, and other ways to convey useful information of the results.
-
-ANSWER: Using the DTMC method we can expect to see our first win around 25 rolls and win in ever game after around 32 rolls. The DTMC null state graph below shows where each game ended after 25 rolls. You can see one game made it to the finish. Similarly, you can see the results of part b1 below in the Markov graph.
+* ANSWER: Using the DTMC method we can expect to see our first win around 25 rolls and win in ever game after around 32 rolls. The DTMC null state graph below shows where each game ended after 25 rolls. You can see one game made it to the finish. Similarly, you can see the results of part b1 below in the Markov graph.
 
 | Useful States (full chart in images folder) |
 | ------------- |
@@ -109,8 +106,6 @@ Ladders From  | Ladders To | |  Snakes From  | Snakes To
 
 Run the same simulation and analyze your results similar to part (b) for the proper game of *Snakes and Ladders* for both methods. How often are the snakes and ladders used, how do the probability of finishing change, etc? What is the maximum and expected amount of moves for the game? Use charts and graphs to illustrate these points.
 
-ANSWER: Everything Works!
-
 | Markov |
 | ------------- |
 | ![](images/part2c/p2cmarkov.png?raw=true) |
@@ -127,12 +122,11 @@ ANSWER: Everything Works!
 | ------------- |
 | ![](images/part2c/p2cdtmcgraph.png?raw=true) |
 
-As seen above, because of the snakes and ladders, there is no definite possibilty of finishing. The Markov graph shows that even after 100 rolls the probability of finishing is still not 100%. The DTMC graph shows where players ended after 100 rolls, with only two players making it to the end. For Markov, as you increase the amount of rolls you approach a 92% probability of reaching the end. With DTMC you can expect to hit the end eventually, but there is no definite amount of rolls where you can expect to reach the end.
-
+* ANSWER: Everything Works! As seen above, because of the snakes and ladders, there is no definite possibilty of finishing. The Markov graph shows that even after 100 rolls the probability of finishing is still not 100%. The DTMC graph shows where players ended after 100 rolls, with only two players making it to the end. For Markov, as you increase the amount of rolls you approach a 92% probability of reaching the end. With DTMC you can expect to hit the end eventually, but there is no definite amount of rolls where you can expect to reach the end.
 
 **(d) Think - 10pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
 
-ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter).
+*ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter).
 
 See the markov_results.txt, markov_results_wins.txt, dtmc_results.txt, and excel sheet (image folder) for more information.
 
