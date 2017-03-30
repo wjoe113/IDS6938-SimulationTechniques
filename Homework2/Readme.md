@@ -109,6 +109,25 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 
 ANSWER: Everything Works!
 
+| Markov |
+| ------------- |
+| ![](images/part2c/p2cmarkov.png?raw=true) |
+
+| Markov Graph |
+| ------------- |
+| ![](images/part2c/p2cmarkovgraph.png?raw=true) |
+
+| DTMC |
+| ------------- |
+| ![](images/part2c/p2cdtmc.png?raw=true) |
+
+| DTMC Graph |
+| ------------- |
+| ![](images/part2c/p2cdtmcgraph.png?raw=true) |
+
+As seen above, because of the snakes and ladders, there is no definite possibilty of finishing. The Markov graph shows that even after 100 rolls the probability of finishing is still not 100%. The DTMC graph shows where players ended after 100 rolls, with only two players making it to the end. For Markov, as you increase the amount of rolls you approach a 92% probability of reaching the end. With DTMC you can expect to hit the end eventually, but there is no definite amount of rolls where you can expect to reach the end.
+
+
 **(d) Think - 10pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
 
 ANSWER: Even if strategy (blowing on dice, shaking hand, etc.) is introduced in to Snakes and Ladders, it will not alter the outcome. For example, blowing on dice does not increase the probability of it landing on a particular side (unless you want to account for the wind resistance and weight of your spit). Therefore if a game is only a game if strategy is involved, then games like Snakes and Ladders and I Declare War are not games. They are entertaining excersizes of chance (and very long homework assignments - I'm not bitter).
