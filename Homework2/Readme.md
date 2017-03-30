@@ -6,6 +6,10 @@
 This is the framework for homework #2. 
 
 I would like to use 2 late day.
+Extra Credit:
+* (10 Points)-Add a 2D visualization to AnyLogic for Part 3.
+* (10 Points)-Add a 3D visualization to AnyLogic for Part 3.
+* (20 Points) - Complete Part 2 with a 3D version of Snakes and Ladders. Construct the game's transition matrix, simulate the game, and analyze the results.
 
 The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
