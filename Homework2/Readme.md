@@ -60,6 +60,10 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 **(e)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different distributions. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines. (See [Random Numbers Webcourse page](https://webcourses.ucf.edu/courses/1246518/pages/random-numbers?module_item_id=10541423) for a rough idea what you should produce.)
 
+| Unit Square - Distributions, N = 500, 1000, 2000 |
+| ------------- |
+| ![](images/part1de/p1cplots.png?raw=true) |
+
 **(f)- 4pts:** Repeat parts (d) and (e) with a unit circle.
 
 | Unit Circle - Engines, N = 1000 |
@@ -68,7 +72,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 | Unit Circles - Distributions, N = 1000 |
 | ------------- |
-| ![](images/part1de/p1fcircle1000.png?raw=true) |
+| ![](images/part1de/p1fdiscircle1000.png?raw=true) |
 
 * ANSWER: If you run each engine twice (for sin and cos unit calculations), run each distribution with one random engine twice, then calculate their new x and y for the circle, all tripled to account for varying N's, you'd run: 20 simulations, have 60 lines of data, and 30 unit circles and squares. Not including previous parts (although this builds on them). I had already made all 15 unit squares, but for the sake of time I did one unit circle for each engine and sistribution with N = 1000. Are you sure this part isn't worth 40pts? No matter, full excel sheets with all 20+ simulations, 60+ lines of data, and 30+ unit circles and squares are in the image folders.
 
