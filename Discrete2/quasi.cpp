@@ -48,7 +48,7 @@ int main()
 
 	// 3) Play with N
 	//unsigned int N = 100000;  // number of values generated
-	unsigned int N = 1000;
+	unsigned int N = 2000;
 	double randomValue;
 	std::map<int, int> hist; //Counts of discrete values
 	std::vector<double> raw; //raw random values 
