@@ -6,7 +6,7 @@
 This is the framework for homework #2. 
 
 2 Extra Days Used - 1 Remaining
-Extra Credit:
+Extra Features:
 * (10 Points) - Add a 2D visualization to AnyLogic for Part 3.
 * (10 Points) - Add a 3D visualization to AnyLogic for Part 3.
 * (20 Points) - Complete Part 2 with a 3D version of Snakes and Ladders. Construct the game's transition matrix, simulate the game, and analyze the results.
@@ -109,7 +109,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | ------------- |
 | ![](images/part2b/MarkovNullState.png?raw=true) |
 
-| DTMC Null State Graph after 25 rolls |
+| DTMC Null State Graph After 25 rolls |
 | ------------- |
 | ![](images/part2b/DTMCNullState.png?raw=true) |
 
@@ -180,7 +180,7 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 
 **(d) - 4pts:** Write code to call the functions to output and generate data from the airport senario. Plot and analyze the useful statistics/results in the program of your choice.  (Hint -  basically call  *.output();* on the MM1_Queue objects you create. Hint2 - two other use functions are *get_current_time()* and  *plot_results_output()* call intially on your intial MM1_Queue object.)  
 
-* ANSWER: From the graphs below we can see how the simulation performed each task compared to the expected performance of that task. For example, the number of customers was higher than expected a majority of the time, and the wait time was around average (for once). 
+* ANSWER: From the graphs below we can see how the simulation performed each task compared to the expected performance of that task. For example, the number of customers was higher than expected a majority of the time, and the wait time was around average (for once). Data collected can be found in the queues build folder.
 
 | main.cpp, output code |
 | ------------- |
@@ -209,14 +209,18 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 ## Part 4 - Implementing Extra Features (10 pts)
 Implementing 2 features on the extra features list. Pick any feature on the "*extra features*" list below to customize your assignment to fit your interests. Please document this in your writeup. (*Note: These should total 10pts. You could successfully implement a feature worth 10pts or greater. This also fulfills this requirement. The features are assigned points based on difficulty. The 5pt features are more straightforward.*)
 
+The extra features completed in this project include:
+* (10 Points) - Add a 2D visualization to AnyLogic for Part 3.
+* (10 Points) - Add a 3D visualization to AnyLogic for Part 3.
+* (20 Points) - Complete Part 2 with a 3D version of Snakes and Ladders. Construct the game's transition matrix, simulate the game, and analyze the results.
+
 ## Part 5 - Final Report (10 pts)
 Write up the results to the previous sections in the main *readme.md* in your forked repository. Turn in the URL for your fork in webcourses. Be visual. The report should contain the graphs and analysis requested. I have high expectations for the documentation here and you should allot the proper time to compose the writeup.
 
+* ANSWER: This readme is the final report for the homework. Special thanks to everyone who aided me in each part. It'd be a shorter list if I listed who didn't aid me in some way. Also, special thanks to the many Disney soundtracks that got me through numerous nights of coding. I listened to so many songs, YouTube stopped recommending them on my home page.
 
 ## Extra Features (Extra Credit - 25pts)
-You have to implement two features from this list for Part 4. You may choose any two features you wish from this list. (Please explicitly note them in your *Readme.md*)
-
-If you feel like going beyond the scope of the assignment, you should consider implementing more of the following extra features. *Get the assignment working without them first.* You can get a maximum of 25 points in extra credit. Simply implementing these things doesn't guarantee you a 25; you really need to go above and beyond to get the full amount. (*The instructor reserves the right to hand out extra credit as his he sees fit.*)
+You have to implement two features from this list for Part 4. You may choose any two features you wish from this list. (Please explicitly note them in your *Readme.md*) If you feel like going beyond the scope of the assignment, you should consider implementing more of the following extra features. *Get the assignment working without them first.* You can get a maximum of 25 points in extra credit. Simply implementing these things doesn't guarantee you a 25; you really need to go above and beyond to get the full amount. (*The instructor reserves the right to hand out extra credit as his he sees fit.*)
 
 * **(5 Points)** - Implement and compare Halton, Hammersley, (Or another quasi method) Quasi sequences and add them to your analysis for appropriate subparts of Part 1.
 * **(5 Points)** - Implement different distributions inside the Quasi random sequences and add them to your analysis for appropriate subparts of Part 1.
