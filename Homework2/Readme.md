@@ -30,7 +30,7 @@ The goal of this assignment is to become familiar with the concepts in the secon
 ## Part 1: Empirical Tests of Randomness (20 pts).
 **(a) - 3pts:** Output the results of five different random number engines, using a uniform distribution for values between [0-100]. Generate useful charts and statistics from the output to analyze how uniform these values truly are. You are expected to look at some advanced statistics and test, for example: tests like the Kolmogorov-Smirnov test, Chi-square test, Autocorrelation test, and Spearman’s Rank Correlation Coefficient are a few examples of ones your could use.)
 
-| N = 100000 | N = 100000 |
+| N = 100000 | Part1a |
 | ------------- | ------------- |
 | ![](images/part1a/MT100000.png?raw=true) | ![](images/part1a/Knuth100000.png?raw=true) |
 | ![](images/part1a/MS100000.png?raw=true) | ![](images/part1a/Ranlux100000.png?raw=true) |
@@ -38,11 +38,13 @@ The goal of this assignment is to become familiar with the concepts in the secon
 
 **(b) - 2pts:**  Vary *N* (amount of samples). How do things change.
 
-| N = 500 | N = 500 |
+| N = 500 | Part1b |
 | ------------- | ------------- |
 | ![](images/part1b/MT500.png?raw=true) | ![](images/part1b/Knuth500.png?raw=true) |
 | ![](images/part1b/MS500.png?raw=true) | ![](images/part1b/Ranlux500.png?raw=true) |
 | ![](images/part1b/Sobol500.png?raw=true) | ![](images/part1b/p1busefulstats.png?raw=true) |
+
+* ANSWER: I made N = 500 for part1b. The variances for N = 500 were slightly larger than for N = 100000 but everything else pretty much stayed the same (mean, stdev). The median, min, max, and range changed as expected because these are randomly generated. The higher N the more chances a smaller min and larger max can be generated.
 
 **(c) - 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
 
@@ -73,8 +75,6 @@ The goal of this assignment is to become familiar with the concepts in the secon
 | Unit Circles - Distributions, N = 1000 |
 | ------------- |
 | ![](images/part1de/p1fdiscircle1000.png?raw=true) |
-
-* ANSWER: If you run each engine twice (for sin and cos unit calculations), run each distribution with one random engine twice, then calculate their new x and y for the circle, all tripled to account for varying N's, you'd run: 20 simulations, have 60 lines of data, and 30 unit circles and squares. Not including previous parts (although this builds on them). I had already made all 30 unit squares, but for the sake of time I did one unit circle for each engine and distribution with N = 1000 to show it can be done. Are you sure this part isn't worth 40pts? No matter, full excel sheets with all 20+ simulations, 60+ lines of data, and 30+ unit circles and squares for each part are in their corresponding image folder.
 
 ## Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
 **(a) Null State Game transition matrix - 10pts:** The *null state game* is defined by a game with no snakes and no ladders. This simplifies the game to just the moves of the two dice rolls. Create the transition matrix for the null state game. The Transition Matrix would be decided by the roll of a fair, six-sided die, so it would start to look like: From state 0 it is equally probable of landing on squares 1-6. From state 1 t is equally probable of landing on squares 2-7, and so on. Create this transition matrix. The end is trickier, we will consider any roll past 100 a win case. (Opposed to rolling exactly onto square 100.) Confirm you have a well formed stochastic matrix (Write checks for confirming each row of T sums to one and all elements are non-negative). The Transition Matrix methods can be found in the TransitionMatrix.h file.
