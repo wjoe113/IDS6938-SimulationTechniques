@@ -32,10 +32,10 @@ Description of agent state vector and input vector:
 * input[1] is the torque in local body coordinates
 
 You will need to set deriv[0], deriv[1], deriv[2], deriv[3]. Compute derivative vector given input and state vectors. This function sets derive vector to appropriate values after being called. 
-* deriv[2] is the velocity of the agent  in local body coordinates
-* deriv[3] is the angular velocity of the agent in world coordinates
-* deriv[0] is the force in local body coordinates divided by the mass.
-* deriv[1] is the torque in local body coordinates divided by the inertia.
+* deriv[0] is the velocity of the agent  in local body coordinates
+* deriv[1] is the angular velocity of the agent in world coordinates
+* deriv[2] is the force in local body coordinates divided by the mass.
+* deriv[3] is the torque in local body coordinates divided by the inertia.
 
 You also must implement *SIMAgent::InitValues()*: Try to figure out appropriate values for control and behavior settings. You need to find out appropriate values for: *SIMAgent::Kv0, SIMAgent::Kp1, SIMAgent::Kv1, SIMAgent::KArrival, SIMAgent::KDeparture,
 SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood, SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.*
