@@ -74,10 +74,24 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 | ------------- | ------------- |
 | ![](images/MazeImages/mazeLogicOverlay.png?raw=true) | ![](images/MazeImages/mazePaths.png?raw=true) |
 
-![](images/MazeImages/mazePart2b.png?raw=true)
+| My Maze |
+| ------------- |
+| ![](images/MazeImages/mazePart2b.png?raw=true) |
 
 * ANSWER: Above is my maze along with its pdm, stats, and 3D animation. There are five paths, four dead ends, and one fork in the maze. The first image shows the pedestrian logic(not just any logic ;D) over its location in the maze. The second image shows the five paths in the maze(also placed in third image). The third image shows my maze, its pdm, logic, graph for each path/deadend, the maze paths, and the 3D view. Each color on the graph corresponds to that colored path.
 
 * The results from my maze are as I expected with the most traveled path being the shortest path (southern-most, dark blue). When each pedestrian reaches an intersection in the maze they have a 50% probability of choosing either path. So how could more pedestrians travel south than north? The southern path is the shortest path and it receives all the pedestrians who travel through the fork. I made the fork in the road to see how pedestrians would handle switching from one major path to the other (dark green to dark blue). Thus, it must be because it receives pedestrians from the fork. However, as seen by the light blue and yellow lines on the graph, slightly more pedestrians passed through the fork from the bottom path (light blue) than from the top path (yellow). This proves more pedestrians used the southern path regardless of the 50% probability. Therefore, my theory that pedestrians will take the quickest path the majority of the time is correct. []
+
+| Group Logic | Group Settings |
+| ------------- | ------------- |
+| ![](images/MazeImages/groupLogic.png?raw=true) | ![](images/MazeImages/groupSettings.png?raw=true) |
+
+| My Maze... When people follow each other around |
+| ------------- |
+| ![](images/MazeImages/mazeGroupEffort.png?raw=true) |
+
+* ANSWER: I varied my maze runners (agents) by telling them to group up and solve the maze as a team. When I told them to swarm I noticed maze runners coming out of dead ends would follow other runners back into them. This was the exact opposite of what I wanted, because who really follows someone back in to a dead end?! So I switched them to chain (image two) and edited my logic (image one) to instruct past dead-enders to head out. This solved the issue and provided the results above (image three). What I found was when runners were chained together they got stuck in the fork. This was natural as people are pushy and we can't walk through each other. For future development, I would recommend making lanes in the fork to neatly allow people to pass.
+
+* Compared to our first maze we achieved slightly different results. First, the number of maze runners to hit a dead end was greatly reduced. This is potentially because when the first person in a chain hits a dead end, he/she immediately turns around leading the others away. Second, we can see the amount of runners going through the fork was the most out of all the paths. As obvious as the large amount of people stuck in the center of the maze, we can see that too many people passing through a narrow spot causes a lot of traffic (I'm referring to you 95 corridors!). Third, we can see that the green and light green paths (top two paths) have similar patterns as the first maze. This is due to the two paths not being blocked by the traffic at the fork. Lastly, we can see an overall increase in the density of pedestrians in all paths. This is due to people traveling in groups rather than individually. While the first maze saw around 1000 maze runners per hour complete the maze, the second maze saw around 5000 runners per hour complete the maze. In conclusion, I'd be content if my CPU water block had the same traffic as the second maze. []
 
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedestrian simulation to visualize your experiment's results.
