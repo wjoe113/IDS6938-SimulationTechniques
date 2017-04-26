@@ -362,13 +362,14 @@ vec2 SIMAgent::Arrival()
 	*********************************************/
 	vec2 tmp;
 	tmp = goal - GPos;
-	vd = tmp.Length() * KArrival;
+	vd = tmp.Length() - KArrival;
 	thetad = atan2(tmp[1], tmp[0]);
-	if (tmp.Length() > 0)
+	if (vd <= KArrival)
 	{
 		return vec2(cos(thetad)*vd, sin(thetad)*vd);
 	}
-	double vn = MaxVelocity * (vd / radius);
+	vd *= 0.1;
+	double vn = SIMAgent::MaxVelocity*(vd / radius);
 	return vec2(cos(thetad)*vn, sin(thetad)*vn);
 }
 
@@ -395,7 +396,7 @@ vec2 SIMAgent::Departure()
 	{
 		return vec2(cos(thetad)*vd, sin(thetad)*vd);
 	}
-	double vn = MaxVelocity * (vd / radius);
+	double vn = SIMAgent::MaxVelocity * (vd / radius);
 	return vec2(cos(thetad)*vn, sin(thetad)*vn);
 }
 
@@ -436,7 +437,7 @@ vec2 SIMAgent::Avoid()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
-	
+
 	return tmp;
 }
 
@@ -491,7 +492,6 @@ vec2 SIMAgent::Cohesion()
 	*********************************************/
 	vec2 tmp;
 
-
 	return tmp;
 }
 
@@ -508,7 +508,7 @@ vec2 SIMAgent::Flocking()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
-
+	
 	return tmp;
 }
 
