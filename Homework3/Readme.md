@@ -70,7 +70,10 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 
 **(b) - 20 points**: Create a maze. Generate the pdm, stats, and animations like before. Vary [parameters in your agents](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Attributes.html) to give them different behaviors and show the pedistrians change how they navigate the maze.
 
+![](images/Maze images/mazeLogicOverlay.png?raw=true)
+
+![](images/Maze images/mazeRoute.png?raw=true)
+
+* ANSWER: Above is my maze along with its pdm, stats, and 3D animation. There are four paths, four dead ends, and one split in the maze. The first image shows the pedestrian logic(not just any logic ;D) over its location in the maze. The second image shows the four paths in the maze.
+
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedistrian simulation to visualize your experiment's results.
-
-
-
