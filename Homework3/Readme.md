@@ -70,9 +70,9 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 
 **(b) - 20 points**: Create a maze. Generate the pdm, stats, and animations like before. Vary [parameters in your agents](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Attributes.html) to give them different behaviors and show the pedistrians change how they navigate the maze.
 
-![](images/Maze_images/mazeLogicOverlay.png?raw=true)
+![](images/MazeImages/mazeLogicOverlay.png?raw=true)
 
-![](images/Maze_images/mazeRoute.png?raw=true)
+![](images/MazeImages/mazeRoute.png?raw=true)
 
 * ANSWER: Above is my maze along with its pdm, stats, and 3D animation. There are four paths, four dead ends, and one split in the maze. The first image shows the pedestrian logic(not just any logic ;D) over its location in the maze. The second image shows the four paths in the maze.
 
