@@ -74,7 +74,7 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 | ------------- | ------------- |
 | ![](images/MazeImages/mazeLogicOverlay.png?raw=true) | ![](images/MazeImages/mazePaths.png?raw=true) |
 
-![](images/MazeImages/mazePart2b.png?raw=true)
+![](images/MazeImages/mazePart2b2.png?raw=true)
 
 * ANSWER: Above is my maze along with its pdm, stats, and 3D animation. There are five paths, four dead ends, and one fork in the maze. The first image shows the pedestrian logic(not just any logic ;D) over its location in the maze. The second image shows the five paths in the maze(also placed in third image). The third image shows my maze, its pdm, logic, graph for each path/deadend, the maze paths, and the 3D view. Each color on the graph corresponds to that colored path.
 
