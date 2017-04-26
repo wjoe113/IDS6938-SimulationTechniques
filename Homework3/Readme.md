@@ -66,6 +66,8 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 
 ![](images/subwayPic1.png?raw=true)
 
+* ANSWER: Above is my subway entrance example. I found the tutorial very helpful in learning the fundamentals of Anylogic (hopefully seen below as well). The pedestrians enter the subway and line up in one of six lines. Once they've reached a line, one pedestrian will be allowed to enter the train per line per second. The rate at which people enter the subway and board the train are parallel, with a slight offset on the boarding lines due to the pedestrians having to stop and wait in line.
+
 **(b) - 20 points**: Create a maze. Generate the pdm, stats, and animations like before. Vary [parameters in your agents](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Attributes.html) to give them different behaviors and show the pedistrians change how they navigate the maze.
 
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedistrian simulation to visualize your experiment's results.
