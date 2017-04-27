@@ -364,7 +364,7 @@ vec2 SIMAgent::Arrival()
 	tmp = goal - GPos;
 	vd = tmp.Length() - KArrival;
 	thetad = atan2(tmp[1], tmp[0]);
-	vd = vd * 0.1;
+	//vd = vd * 0.1; //"Stop, wait a minute!"
 	Truncate(vd, 0, MaxVelocity);
 	return vec2(cos(thetad) * vd, sin(thetad) * vd);
 }
