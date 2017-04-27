@@ -95,3 +95,29 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 * Compared to our first maze we achieved slightly different results. First, the number of maze runners to hit a dead end was greatly reduced. This is potentially because when the first person in a chain hits a dead end, he/she immediately turns around leading the others away. Second, we can see the amount of runners going through the fork was the most out of all the paths. As obvious as the large amount of people stuck in the center of the maze, we can see that too many people passing through a narrow spot causes a lot of traffic (I'm referring to you 95 corridors!). Third, we can see that the green and light green paths (top two paths) have similar patterns as the first maze. This is due to the two paths not being blocked by the traffic at the fork. Lastly, we can see an overall increase in the density of pedestrians in all paths. This is due to people traveling in groups rather than individually. While the first maze saw around 1000 maze runners per hour complete the maze, the second maze saw around 5000 runners per hour complete the maze. In conclusion, I'd be content if my CPU water block had the same traffic as the second maze. []
 
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedestrian simulation to visualize your experiment's results.
+
+| UCF R&W Center Sim | UCF R&W Center Map |
+| ------------- | ------------- |
+| ![](images/RaWCenter/RaWCenterSim.png?raw=true) | ![](images/RaWCenter/RaWCenterMap.png?raw=true) |
+
+| Logic | Logic Breakdown |
+| ------------- | ------------- |
+| ![](images/RaWCenter/RaWCenterLogic.png?raw=true) | ![](images/RaWCenter/RaWCenterLogicLegend.png?raw=true) |
+
+| Fire Alarm Logic | Logic Breakdown |
+| ------------- | ------------- |
+| ![](images/RaWCenter/RaWCenterFireLogic.png?raw=true) | ![](images/RaWCenter/RaW3D.png?raw=true) |
+
+* ANSWER: Above is my setup for simulating people going to the Recreation and Wellness Center (RWC) on campus. The RWC is located on the south side of campus and is UCF's largest gym. The simulation depicts simple gym activities such as working out, running laps, going to a group exercise class, going to the bathroom (and showering), and going to the gym's Subway. Each activity is color-coded and can be seen on the map legend above. Also seen above is the logic for each of the activities. When a person enters the gym, they have many activities to choose from. Certain activities such as working out and attending group classes are weighed more than other activities. After each activity, a gym goer can choose to participate in another activity or leave the gym. Each probability of each activity and its relationship to other activities can be found in the logic of my simulation included in this project folder.
+
+* The stats show the traffic for each activity as well as people entering and leaving the gym. As stated above, working out has the most traffic. People eating subs and showering tied for the least amount of traffic, which means most people don't shower and leave the gym smelling like sweat and (maybe) subs (yuck!). People attending group classes saw a steady traffic rate, while people taking laps around the indoor track saw a steady increase in laps over the course of the day (way to go runners!). A run-through of the simulation as well as a fire drill simulation can be seen below.
+
+
+| Regular Gym Day | Fire Alarm |
+| ------------- | ------------- |
+| ![](images/RaWCenter/RegularGymDay.png?raw=true) | ![](images/RaWCenter/GymFireAlarm.png?raw=true) |
+
+* ANSWER: Above you can see a side-by-side comparison of a typical day at the gym and when there is a fire/fire alarm. For both, the traffic patterns seen by the pdm are what they're expected to be for the RWC. Most people congregate toward the entrance where the Subway is located, in the hallway with the group exercise classrooms, and around the indoor track. The front entrance also showed heavy traffic because it is the primary way to enter and exit the gym. In the fire simulation, we can see a slight increase in exit traffic for the other two exits because depending on which activity people are performing when the fire alarm goes off determines which exit they take (they go to the nearest exit, smart cookies!).
+
+* The stats also show this flux in traffic as when the fire alarm goes off all the activities have lower traffic rates than the exits, until there is no one left in the gym. Even people who just entered the gym turn around and leave. this proves our simulation correctly displays what happens in a typical day at the gym as well as in a fire/fire alarm scenario. A video on the typical day at the gym until the fire alarm goes off can be seen here:
+
