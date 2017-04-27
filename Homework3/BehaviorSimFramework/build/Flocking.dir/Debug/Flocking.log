@@ -2,9 +2,7 @@
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: see declaration of 'MBCS_Support_Deprecated_In_MFC'
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(487): warning C4018: '<': signed/unsigned mismatch
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(524): warning C4018: '<': signed/unsigned mismatch
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(540): warning C4552: '/': operator has no effect; expected operator with side-effect
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(541): warning C4552: '/': operator has no effect; expected operator with side-effect
-D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(569): warning C4018: '<': signed/unsigned mismatch
+D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(480): warning C4018: '<': signed/unsigned mismatch
+D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(511): warning C4018: '<': signed/unsigned mismatch
+D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\src\Agent.cpp(542): warning C4018: '<': signed/unsigned mismatch
   Flocking.vcxproj -> D:\Data\Documents\Github Repositories\Forked IDS6938\IDS6938-SimulationTechniques\Homework3\BehaviorSimFramework\build\Debug\Flocking.exe
