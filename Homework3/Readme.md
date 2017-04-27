@@ -125,4 +125,4 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 
 * The stats also show this flux in traffic as when the fire alarm goes off all the activities have lower traffic rates than the exits, until there is no one left in the gym. Even people who just entered the gym turn around and leave. this proves our simulation correctly displays what happens in a typical day at the gym as well as in a fire/fire alarm scenario. A video on the typical day at the gym until the fire alarm goes off can be seen here:
 
-**All three simulations (subway, maze, RWC) can be found in the homework3 folder titles Maze and RWC Simulations!!!**
+**All three simulations (subway, maze, RWC) can be found in the homework3 folder titled Maze and RWC Simulations!!!**
