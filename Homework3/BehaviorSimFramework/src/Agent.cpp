@@ -8,7 +8,7 @@
 
 #ifdef _DEBUG
 #undef THIS_FILE
-static char THIS_FILE[]=__FILE__;
+static char THIS_FILE[] = __FILE__;
 #define new DEBUG_NEW
 #endif
 
@@ -229,17 +229,17 @@ void SIMAgent::InitValues()
 	*********************************************/
 	Kv0 = 10.0;
 	Kp1 = -100.0;
-	Kv1 = 16.0;
-	KArrival = 1.0;
-	KDeparture = 1.0;
-	KNoise = 10.0;
-	KWander = 5.0;
-	KAvoid = 100.0;
-	TAvoid = 20.0;
-	RNeighborhood = 500.0;
-	KSeparate = 10.0;
-	KAlign = 20.0;
-	KCohesion = 1.0;
+	Kv1 = 20.0;
+	KArrival = 100.0;
+	KDeparture = 200.0;
+	KNoise = 5.0;
+	KWander = 10.0;
+	KAvoid = 500.0;
+	TAvoid = 0.5;
+	RNeighborhood = 100.0;
+	KSeparate = 1.0;
+	KAlign = 5.0;
+	KCohesion = 5.0;
 }
 
 /*
@@ -286,7 +286,7 @@ void SIMAgent::UpdateState()
 	*********************************************/
 	for (int i = 0; i < dimState; i++)
 	{
-		state[i] += deriv[i]*deltaT;
+		state[i] += deriv[i] * deltaT;
 	}
 	state[0] = 0.0;
 
@@ -294,8 +294,8 @@ void SIMAgent::UpdateState()
 	Truncate(state[2], -SIMAgent::MaxVelocity, SIMAgent::MaxVelocity);
 
 	vec2 GVelocity;
-	GVelocity[0] = state[2]*cos(state[1]);
-	GVelocity[1] = state[2]*sin(state[1]);
+	GVelocity[0] = state[2] * cos(state[1]);
+	GVelocity[1] = state[2] * sin(state[1]);
 	GPos += GVelocity;
 
 	Truncate(GPos[0], -1.0*env->groundSize, env->groundSize);
@@ -319,8 +319,8 @@ vec2 SIMAgent::Seek()
 	vec2 tmp;
 	tmp = goal - GPos;
 	thetad = atan2(tmp[1], tmp[0]);
-	vd = SIMAgent::MaxVelocity;
-	tmp = vec2(cos(thetad)*vd, sin(thetad)*vd);
+	vd = MaxVelocity;
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
 	return tmp;
 }
 
@@ -340,9 +340,9 @@ vec2 SIMAgent::Flee()
 	vec2 tmp;
 	tmp = goal - GPos;
 	thetad = atan2(tmp[1], tmp[0]);
-	thetad = thetad + M_PI;
-	vd = SIMAgent::MaxVelocity;
-	tmp = vec2(cos(thetad)*vd, sin(thetad)*vd);
+	thetad += M_PI;
+	vd = MaxVelocity;
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
 	return tmp;
 }
 
@@ -364,13 +364,9 @@ vec2 SIMAgent::Arrival()
 	tmp = goal - GPos;
 	vd = tmp.Length() - KArrival;
 	thetad = atan2(tmp[1], tmp[0]);
-	if (vd <= KArrival)
-	{
-		return vec2(cos(thetad)*vd, sin(thetad)*vd);
-	}
-	vd *= 0.1;
-	double vn = SIMAgent::MaxVelocity*(vd / radius);
-	return vec2(cos(thetad)*vn, sin(thetad)*vn);
+	vd = vd * 0.1;
+	Truncate(vd, 0, MaxVelocity);
+	return vec2(cos(thetad) * vd, sin(thetad) * vd);
 }
 
 /*
@@ -389,15 +385,12 @@ vec2 SIMAgent::Departure()
 	*********************************************/
 	vec2 tmp;
 	tmp = goal - GPos;
-	vd = tmp.Length() * KDeparture;
+	vd = KDeparture - tmp.Length();
+	Truncate(vd, 0, MaxVelocity);
 	thetad = atan2(tmp[1], tmp[0]);
 	thetad += M_PI;
-	if (tmp.Length() > 0)
-	{
-		return vec2(cos(thetad)*vd, sin(thetad)*vd);
-	}
-	double vn = SIMAgent::MaxVelocity * (vd / radius);
-	return vec2(cos(thetad)*vn, sin(thetad)*vn);
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
+	return tmp;
 }
 
 /*
@@ -415,7 +408,10 @@ vec2 SIMAgent::Wander()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
-
+	tmp = goal - GPos;
+	thetad = float(rand() % 360) / 180.0 * M_PI;
+	vd = tmp.Length() * KWander;
+	tmp = vec2(cos(thetad) * vd * KNoise, sin(thetad) * vd * KNoise) * KWander;
 	return tmp;
 }
 
@@ -437,7 +433,31 @@ vec2 SIMAgent::Avoid()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+	vec2 avoid1;
+	vec2 avoid2;
+	vec2 obsticle;
 
+	tmp = goal - GPos;
+	thetad = atan2(tmp[1], tmp[0]);
+	vd = SIMAgent::MaxVelocity / 2;
+	avoid1 = GPos + v0.Normalize() * KAvoid;
+	avoid2 = GPos + v0.Normalize() * KAvoid * 0.5;
+
+	for (int i = 0; i < env->obstaclesNum; i++)
+	{
+		obsticle[0] = env->obstacles[i][0];
+		obsticle[1] = env->obstacles[i][1];
+		float dist1 = (obsticle - avoid1).Length();
+		float dist2 = (obsticle - avoid2).Length();
+
+		if (dist1 <= env->obstacles[i][2] + KAvoid || dist2 <= env->obstacles[i][2] + KAvoid)
+		{
+			thetad = thetad + TAvoid;
+			ClampAngle(thetad);
+			return vec2(cos(thetad) * vd, sin(thetad) * vd);
+		}
+	}
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
 	return tmp;
 }
 
@@ -455,7 +475,20 @@ vec2 SIMAgent::Separation()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+	vec2 sum;
 
+	for (int i = 0; i < agents.size(); i++)
+	{
+		vec2 dist = agents[i]->GPos - GPos;
+		if (dist.Length() < RNeighborhood)
+		{
+			tmp = goal - agents[i]->GPos;
+			sum += (tmp / tmp.Length()) * KSeparate;
+		}
+	}
+	thetad = atan2(sum[1], sum[0]);
+	vd = MaxVelocity / 2;
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
 	return tmp;
 }
 
@@ -473,7 +506,20 @@ vec2 SIMAgent::Alignment()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+	vec2 sum;
 
+	for (int i = 0; i < agents.size(); i++) {
+		vec2 dist = agents[i]->GPos - GPos;
+		if (dist.Length() < RNeighborhood)
+		{
+			sum = agents[i]->v0.Normalize();
+		}
+	}
+	tmp = goal - GPos + sum;
+	thetad = atan2(tmp[1], tmp[0]);
+	vd = tmp.Length() * KAlign;
+	Truncate(vd, 0, MaxVelocity);
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
 	return tmp;
 }
 
@@ -491,7 +537,22 @@ vec2 SIMAgent::Cohesion()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+	int n = 0;
 
+	for (int i = 0; i < agents.size(); i++)
+	{
+		vec2 dist = agents[i]->GPos - GPos;
+		if (dist.Length() < RNeighborhood)
+		{
+			tmp += dist;
+			n++;
+		}
+	}
+	tmp = (tmp / n) - GPos;
+	vd = tmp.Length() * KCohesion;
+	Truncate(vd, 0, MaxVelocity);
+	thetad = atan2(tmp[1], tmp[0]);
+	tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
 	return tmp;
 }
 
@@ -508,7 +569,9 @@ vec2 SIMAgent::Flocking()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
-	
+	tmp = (KSeparate * Separation()) + (KCohesion * Cohesion()) + (KAlign * Alignment());
+	//thetad = atan2(tmp[1], tmp[0]);
+	//vd = tmp.Length();
 	return tmp;
 }
 
@@ -527,5 +590,16 @@ vec2 SIMAgent::Leader()
 	*********************************************/
 	vec2 tmp;
 
+	if (agents[0] == this)
+	{
+		return Seek();
+	}
+	else
+	{
+		tmp = KSeparate * Separation() + KArrival * Arrival();
+		thetad = atan2(tmp[1], tmp[0]);
+		vd = tmp.Length();
+		tmp = vec2(cos(thetad) * vd, sin(thetad) * vd);
+	}
 	return tmp;
 }
