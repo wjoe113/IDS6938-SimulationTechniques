@@ -70,7 +70,7 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 
 **(b) - 20 points**: Create a maze. Generate the pdm, stats, and animations like before. Vary [parameters in your agents](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Attributes.html) to give them different behaviors and show the pedestrians change how they navigate the maze.
 
-| Pedestrian logic | Paths |
+| Pedestrian logic | Paths (Click on image to enlarge) |
 | ------------- | ------------- |
 | ![](images/MazeImages/mazeLogicOverlay.png?raw=true) | ![](images/MazeImages/mazePaths.png?raw=true) |
 
@@ -104,7 +104,7 @@ The goal of this part of the assigment is to simulate the pedestrain flow for va
 | ------------- | ------------- |
 | ![](images/RaWCenter/RaWCenterLogic.png?raw=true) | ![](images/RaWCenter/RaWCenterLogicLegend.png?raw=true) |
 
-| Fire Alarm Logic | Logic Breakdown |
+| Fire Alarm Logic | 3D Model |
 | ------------- | ------------- |
 | ![](images/RaWCenter/RaWCenterFireLogic.png?raw=true) | ![](images/RaWCenter/RaW3D.png?raw=true) |
 
